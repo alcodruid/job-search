@@ -1,5 +1,50 @@
 # Anti-Gravity Prompts — cyberdub.su
 
+---
+
+## ⚠️ DEPLOYMENT RULES — READ BEFORE GENERATING ANY DEPLOY CODE
+
+This site runs on a home server (cyberdub-ai, Ubuntu 24.04). Follow these rules exactly.
+
+**Architecture:** Internet → Caddy (80/443) → Docker containers (internal `n8n_net` network)
+
+**Reverse proxy: CADDY ONLY.** Never nginx, never Apache, never any other proxy.
+
+**Existing setup — DO NOT change container name or port:**
+- Container: `cyberdub-website`, internal port `3056`
+- Network: `n8n_net` (external, already exists)
+- Compose: `~/stack/cyberdub-website/docker-compose.yml`
+- Caddy already routes `cyberdub.su → cyberdub-website:3056` in `~/stack/n8n/Caddyfile`
+
+**docker-compose.yml must look like:**
+```yaml
+services:
+  cyberdub-website:
+    build: .
+    container_name: cyberdub-website
+    restart: unless-stopped
+    expose:
+      - "3056"       # use expose:, NOT ports:
+    networks:
+      - n8n_net
+networks:
+  n8n_net:
+    external: true
+    name: n8n_net
+```
+
+**Occupied ports (do not use):** 80, 443, 3000, 3001, 3020-3025, 3040, 3056, 3070-3096, 5432-5435, 5678, 6333, 6379-6385, 8050-8090, 8118-8119, 9090, 11434, 19999
+
+**Deploy commands:**
+```bash
+cd ~/stack/cyberdub-website && docker compose build && docker compose up -d
+docker exec caddy caddy reload --config /etc/caddy/Caddyfile  # if Caddyfile changed
+```
+
+**Full deploy rules:** `~/job-search/deploy-rules.md`
+
+---
+
 ## DESIGN SYSTEM (apply to all pages)
 
 MOOD: "Private GPU server meets hacker's portfolio meets senior engineering blog"
