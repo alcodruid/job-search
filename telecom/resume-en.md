@@ -105,6 +105,25 @@ Created and monetized content websites via Yandex Advertising Network (RSY). Han
 
 ---
 
+## Own Projects
+
+### TelecomExpert.ru — Telecom Materials Marketplace
+**Status:** In development · telecomexpert.ru
+
+Drawing on 19 years of operator experience, building a marketplace of regulatory documents, templates, and operational materials for small Russian telecom operators.
+
+**Platform capabilities:**
+- Library of regulatory documents, contract templates, and technical conditions
+- SORM/TSPU compliance guides, RKN/FAS/Rossvyaz interaction manuals
+- AI-powered search: ask a question — get an answer with source citation
+- Open marketplace: operators join and contribute to the knowledge base
+
+**Value:** 19 years of operator experience converted into a practical knowledge base for the industry.
+
+Join us → **telecomexpert.ru**
+
+---
+
 ## Education
 
 **Saint Petersburg State University of Aerospace Instrumentation (SPbGUAP)**  

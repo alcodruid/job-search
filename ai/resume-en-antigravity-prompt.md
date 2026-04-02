@@ -267,10 +267,11 @@ Highlights: Multi-tenant knowledge base · Conversation memory · Auto-response 
 
 **Project 2:**
 ```
-[PROD] TelecomExpert — Technical Documentation RAG
-Enterprise RAG system: document ingestion → chunking → embedding → retrieval → generation.
-Stack: [bge-m3 1024-dim] [Qdrant] [qwen2.5:32b] [FastAPI] [Docker]
-Highlights: Domain-specific embedding model selection · Separate Qdrant collection per tenant
+[PROD] TelecomExpert.ru — Telecom Materials Marketplace
+Marketplace of regulatory docs, contract templates, and SORM/TSPU guides for small Russian
+ISPs. RAG-powered search: ask a question — get an answer with source citation.
+Open to operators: telecomexpert.ru
+Stack: [bge-m3 1024-dim] [Qdrant] [qwen2.5:32b] [FastAPI] [Python] [Docker]
 ```
 
 **Project 3:**

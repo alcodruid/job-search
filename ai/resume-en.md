@@ -50,10 +50,20 @@ Business CRM with RAG core: trains on company knowledge base, classifies inquiri
 **Stack:** qwen2.5:32b (main), qwen2.5:7b (fast classifier), nomic-embed-text, Qdrant, n8n, Python/TypeScript, Docker  
 **Highlights:** Multi-tenant knowledge base, conversation memory, automated response suggestions
 
-### TelecomExpert — Technical Documentation RAG
-Enterprise RAG system for telecom documentation: full pipeline from document ingestion → chunking → embedding → retrieval → generation.  
-**Stack:** bge-m3 1024-dim embeddings, Qdrant, qwen2.5:32b, FastAPI, Docker  
-**Highlights:** Domain-specific embedding model selection, separate Qdrant collection per tenant
+### TelecomExpert.ru — Materials Marketplace for Telecom Operators
+**Status:** In development · telecomexpert.ru
+
+A marketplace of regulatory documents, contract templates, and operational materials for small Russian telecom operators. Search powered by a RAG pipeline with LLM-generated answers.
+
+**Platform capabilities:**
+- Library of regulatory docs, contract templates, and technical conditions
+- SORM/TSPU compliance guides, RKN/FAS/Rossvyaz interaction manuals
+- AI-powered search: ask a question — get an answer with source citation
+- Open marketplace: operators can join and contribute to the knowledge base
+
+**Stack:** bge-m3 (1024-dim), Qdrant, qwen2.5:32b, FastAPI, Python, Docker
+
+**Invitation:** Running a telecom operator? Join us → telecomexpert.ru
 
 ### Job Matcher — AI Job Search Assistant
 Telegram bot with LLM core: resume analysis, job matching, resume adaptation for specific positions, interview preparation coaching.  

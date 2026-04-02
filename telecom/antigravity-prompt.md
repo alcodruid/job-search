@@ -1,5 +1,40 @@
 # Anti-Gravity Prompts — alexeyzhuykov.ru
 
+## ⚠️ DEPLOYMENT RULES — READ BEFORE GENERATING ANY DEPLOY CODE
+
+This site runs on a home server (cyberdub-ai, Ubuntu 24.04). Follow these rules exactly.
+
+**Architecture:** Internet → Caddy (80/443) → Docker containers (internal `n8n_net` network)
+
+**Reverse proxy: CADDY ONLY.** Never nginx, never Apache, never any other proxy.
+
+**Existing setup — DO NOT change container name or port:**
+- Container: `alexeyzhuykov-website`, network: `n8n_net` (external, already exists)
+- Use `expose:` not `ports:` in docker-compose.yml
+- Occupied ports (do not use): 80, 443, 3000, 3001, 3020-3025, 3040, 3056, 3070-3096, 5432-5435, 5678, 6333, 6379-6385, 8050-8090, 8118-8119, 9090, 11434, 19999
+
+**Full deploy rules:** `~/job-search/deploy-rules.md`
+
+---
+
+## I18N REQUIREMENT (applies to ALL pages)
+
+The site must support **two languages: Russian (RU) and English (EN)** with a language switcher in the navigation.
+
+**Implementation:** Use i18next + react-i18next (same as cyberdub.su).
+- Language switcher: button [RU] / [EN] in the navigation bar
+- Default language: Russian (RU) — this is a Russian-market primary site
+- All text content must be in both languages via translation files
+- Language preference saved in localStorage
+
+**Language switcher style (matches nav):**
+- Active language: color #c9a84c (gold), font-weight 600
+- Inactive language: color #8a9ab5
+- Separator: "/" between them
+- Font: Space Grotesk 500
+
+---
+
 ## PAGE 1: HOME (index page)
 
 Create a single-page website section for the HOME page of a personal branding website 
@@ -454,4 +489,75 @@ Right column (40%): Direct contacts
     "Based in: Saint Petersburg, Russia"
     "Timezone: UTC+3 (Moscow)"
     "Available: Remote worldwide"
+
+---
+
+## PAGE 5: TELECOMEXPERT PROJECT
+
+Create a dedicated page for TelecomExpert.ru project. Same design system.
+
+### Page Header
+  Label: "PROJECT"
+  H1 (RU): "TelecomExpert.ru" / H1 (EN): "TelecomExpert.ru"
+  Subhead (RU): "Маркетплейс материалов для малых операторов связи"
+  Subhead (EN): "Materials Marketplace for Small Telecom Operators"
+
+### Hero Section
+Full-width card with gold accent border on left (4px solid #c9a84c):
+
+RU text:
+"Маркетплейс нормативных документов, шаблонов и методических материалов 
+для малых операторов связи Российской Федерации. Создан на основе 19-летнего 
+личного опыта управления оператором связи."
+
+EN text:
+"A marketplace of regulatory documents, contract templates, and operational materials 
+for small Russian telecom operators. Built on 19 years of personal ISP management experience."
+
+### Features Grid (2×2)
+Card 1: 
+  Icon: document/file SVG
+  Title RU: "Нормативная база" / EN: "Regulatory Library"
+  Desc RU: "Документы РКН, ФАС, Россвязи, шаблоны лицензий и договоров"
+  Desc EN: "RKN, FAS, Rossvyaz docs, license and contract templates"
+
+Card 2:
+  Icon: shield/check SVG
+  Title RU: "СОРМ и ТСПУ" / EN: "SORM & TSPU Compliance"
+  Desc RU: "Пошаговые руководства по проектированию, сдаче и эксплуатации систем ОРМ"
+  Desc EN: "Step-by-step guides for SORM/TSPU design, handover, and operation"
+
+Card 3:
+  Icon: AI/search SVG
+  Title RU: "AI-поиск" / EN: "AI-Powered Search"
+  Desc RU: "Задай вопрос — получи ответ с цитатой из документа (RAG + Ollama)"
+  Desc EN: "Ask a question — get an answer with source citation (RAG + Ollama)"
+
+Card 4:
+  Icon: community/network SVG
+  Title RU: "Открытый маркетплейс" / EN: "Open Marketplace"
+  Desc RU: "Операторы присоединяются, делятся материалами, пополняют базу"
+  Desc EN: "Operators join, share materials, and contribute to the knowledge base"
+
+### Stack Section
+Terminal-style block (dark card in the gold theme — background #0f1f3d, border 1px solid #c9a84c):
+```
+Stack:
+├── Embeddings: bge-m3 (1024-dim)
+├── Vector DB:  Qdrant (production)
+├── LLM:        qwen2.5:32b via Ollama
+├── Backend:    FastAPI + Python
+└── Infra:      Docker, Ubuntu Server 24.04
+```
+
+### CTA Section
+Large centered call-to-action:
+
+RU: "Оператор связи?"
+    "Присоединяйтесь к TelecomExpert.ru"
+    [Перейти на сайт →] — gold button → href="https://telecomexpert.ru"
+
+EN: "Running a telecom operator?"
+    "Join TelecomExpert.ru"
+    [Visit the site →] — gold button → href="https://telecomexpert.ru"
 
