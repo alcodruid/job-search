@@ -4,7 +4,7 @@
 
 **Санкт-Петербург** · +7 (921) 946-85-35 · alexey.zhuykov@gmail.com  
 **Формат работы:** Удалённо (Россия / Международный)  
-**GitHub:** github.com/alcodruid · **Сайт:** cyberdub.su · **LinkedIn:** linkedin.com/in/alexeyzhuykov
+**GitHub:** github.com/cyberdub-ai · **Сайт:** cyberdub.su · **LinkedIn:** linkedin.com/in/alexeyzhuykov
 
 ---
 

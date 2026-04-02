@@ -685,7 +685,7 @@ Right (45%): Contacts
   
   email:     info@sntpilot.ru
   telegram:  @alexeyzhuykov
-  github:    github.com/alcodruid
+  github:    github.com/cyberdub-ai
   linkedin:  linkedin.com/in/alexeyzhuykov
   location:  Saint Petersburg, Russia (UTC+3)
   remote:    worldwide

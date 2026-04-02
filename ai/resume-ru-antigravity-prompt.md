@@ -148,7 +148,7 @@ Senior AI Engineer · LLM Infrastructure Engineer · Head of AI
 📧 alexey.zhuykov@gmail.com
 📱 +7 (921) 946-85-35
 🔗 cyberdub.su
-🐙 github.com/alcodruid
+🐙 github.com/cyberdub-ai
 💼 linkedin.com/in/alexeyzhuykov
 ```
 - JetBrains Mono 400, 13px, #7d8590
@@ -370,7 +370,7 @@ OS:  Ubuntu Server 24.04 LTS
 
 ```
 > Последнее обновление: апрель 2026
-> alexey.zhuykov@gmail.com · cyberdub.su · github.com/alcodruid
+> alexey.zhuykov@gmail.com · cyberdub.su · github.com/cyberdub-ai
 ```
 
 JetBrains Mono, #484f58, 12px.

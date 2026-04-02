@@ -3,7 +3,7 @@
 ## Alexey Zhuykov
 
 **Saint Petersburg, Russia** · Remote · +7 (921) 946-85-35 · alexey.zhuykov@gmail.com  
-**GitHub:** github.com/alcodruid · **Website:** cyberdub.su · **LinkedIn:** linkedin.com/in/alexeyzhuykov
+**GitHub:** github.com/cyberdub-ai · **Website:** cyberdub.su · **LinkedIn:** linkedin.com/in/alexeyzhuykov
 
 ---
 

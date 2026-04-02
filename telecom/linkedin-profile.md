@@ -31,7 +31,7 @@ Remote-first roles in telecom operations leadership or AI engineering. Open to R
 
 📍 Saint Petersburg, Russia (remote-ready)  
 🌐 Telecom: alexeyzhuykov.ru | AI: cyberdub.su  
-💻 GitHub: github.com/alcodruid
+💻 GitHub: github.com/cyberdub-ai
 
 ---
 
@@ -131,4 +131,4 @@ Created and monetized content websites via Yandex RSY. Experience in SEO, web an
 ## Featured (pinned links)
 1. cyberdub.su — AI Engineering Portfolio
 2. alexeyzhuykov.ru — Telecom Leadership Profile
-3. github.com/alcodruid
+3. github.com/cyberdub-ai
