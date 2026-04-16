@@ -108,7 +108,7 @@ Created and monetized content websites via Yandex Advertising Network (RSY). Han
 ## Own Projects
 
 ### TelecomExpert.ru — Telecom Materials Marketplace
-**Status:** In development · telecomexpert.ru
+**Status:** In development · telekomexpert.ru
 
 Drawing on 19 years of operator experience, building a marketplace of regulatory documents, templates, and operational materials for small Russian telecom operators.
 
@@ -120,7 +120,7 @@ Drawing on 19 years of operator experience, building a marketplace of regulatory
 
 **Value:** 19 years of operator experience converted into a practical knowledge base for the industry.
 
-Join us → **telecomexpert.ru**
+Join us → **telekomexpert.ru**
 
 ---
 

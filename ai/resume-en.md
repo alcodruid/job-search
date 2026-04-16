@@ -51,7 +51,7 @@ Business CRM with RAG core: trains on company knowledge base, classifies inquiri
 **Highlights:** Multi-tenant knowledge base, conversation memory, automated response suggestions
 
 ### TelecomExpert.ru — Materials Marketplace for Telecom Operators
-**Status:** In development · telecomexpert.ru
+**Status:** In development · telekomexpert.ru
 
 A marketplace of regulatory documents, contract templates, and operational materials for small Russian telecom operators. Search powered by a RAG pipeline with LLM-generated answers.
 
@@ -63,7 +63,7 @@ A marketplace of regulatory documents, contract templates, and operational mater
 
 **Stack:** bge-m3 (1024-dim), Qdrant, qwen2.5:32b, FastAPI, Python, Docker
 
-**Invitation:** Running a telecom operator? Join us → telecomexpert.ru
+**Invitation:** Running a telecom operator? Join us → telekomexpert.ru
 
 ### Job Matcher — AI Job Search Assistant
 Telegram bot with LLM core: resume analysis, job matching, resume adaptation for specific positions, interview preparation coaching.  

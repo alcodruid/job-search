@@ -53,7 +53,7 @@ Senior AI Engineer / LLM Infrastructure Engineer / MLOps Engineer / Head of AI
 **Стэк:** qwen2.5:32b + qwen2.5:7b, nomic-embed-text, Qdrant, n8n, Python/TypeScript, Docker
 
 ### TelecomExpert.ru — Маркетплейс материалов для операторов связи
-**Статус:** в разработке · telecomexpert.ru
+**Статус:** в разработке · telekomexpert.ru
 
 Маркетплейс нормативных документов, шаблонов и методических материалов для малых операторов связи РФ. Поиск по базе работает на RAG-пайплайне с LLM-генерацией ответов.
 
@@ -65,7 +65,7 @@ Senior AI Engineer / LLM Infrastructure Engineer / MLOps Engineer / Head of AI
 
 **Стэк:** bge-m3 (1024-dim), Qdrant, qwen2.5:32b, FastAPI, Python, Docker
 
-**Приглашение:** Оператор связи? Присоединяйтесь → telecomexpert.ru
+**Приглашение:** Оператор связи? Присоединяйтесь → telekomexpert.ru
 
 ### Job Matcher — AI-сервис подбора вакансий
 Telegram-бот с LLM-ядром: анализ резюме, сопоставление с вакансиями, адаптация резюме под конкретную позицию, подготовка к интервью.  
